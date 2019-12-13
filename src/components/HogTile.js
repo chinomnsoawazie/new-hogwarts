@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class HogTile extends Component {
+class HogTile extends Component {
 
     constructor(props) {
         super(props)
@@ -45,7 +45,6 @@ export class HogTile extends Component {
 
 
     render() {
-        // console.log(this.state.clicked)
         return (
             <div className='ui eight wide column'>
                 <h2> {this.props.hog.name} </h2> <button onClick={this.handleHide}>{this.state.hidden ? 'Show Me' : 'Hide Me'}</button><br/>

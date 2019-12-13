@@ -31,18 +31,13 @@ class App extends Component {
     }
 
   }
-  
-
 
   render() {
-
 
     return (
       <div className="App">
           < Nav handleGreasedClick={this.handleGreasedClick} greased={this.state.greased} handleSort={this.handleSort}/>
-          
           <HogsList hogs={this.state.hogArray} greasedStatus={this.state.greased}/>
-
       </div>
     )
   }
